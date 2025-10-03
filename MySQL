@@ -1,0 +1,10 @@
+CREATE TABLE reservations (
+  id INT AUTO_INCREMENT PRIMARY KEY,
+  name VARCHAR(150) NOT NULL,
+  phone VARCHAR(50) NOT NULL,
+  guests INT NOT NULL,
+  date_booking DATE NOT NULL,
+  time_booking TIME NOT NULL,
+  notes TEXT,
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
